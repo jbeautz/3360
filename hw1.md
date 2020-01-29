@@ -64,6 +64,8 @@ $$\pmatrix{31&-4\\-85&11}\pmatrix{\alpha\\\beta} = \pmatrix{22\\0}$$
 
 Hence, $(242, 1870) = 22$ by Euclid's Algorithm.  
 $$31\times 242 - 4\times 1870 = 22$$
+$$\alpha = -4$$
+$$\beta = 31$$
 
 ###Exercise 3E-57
 ######(i) 114x + 270y = 0  
@@ -108,9 +110,46 @@ $$114(76) + 270(-32) = 24$$
 Hence, for $k\in \mathbb{Z}$
 $$x = 76 - 45k$$
 $$y = -32 + 19k$$
+Is a solution to the equation.
 
 
 ###Exercise 3E-58(i)
+$66x + 45y = 0$
+
+First find $(66, 45)$.
+$$66 = 1\times 45 + 21$$
+$$45 = 2\times 21 + 3$$
+$$21 = 7\times 3 + 0$$
+
+Hence, $3 = (66, 45)$.
+
+$$a' = 22$$
+$$b' = 15$$
+
+Therefore $\forall k \in \mathbb{Z}$
+$$x = 15k$$
+$$y = -22k$$
+Is a solution to the equation.
+
+###Exercise 3E-60(i)
+$242x + 1870y = 66$
+
+From Exercise Exercise 3D-39(ii) we know $(242, 1870) = 22$, $\alpha = -4$, and $\beta = 31$.
+
+$$242(31) + 1870(-4) = 22$$
+$$242(93) + 1870(-12) = 66$$
+
+Dividing, $a$ and $b$ by $(a, b)$ we find $a',b'$.
+$$a' = 11$$
+$$b' = 85$$
+
+Therefore we have $\forall k\in \mathbb{Z}$,
+$$x = 93 - 85k$$
+$$y = -12 + 11k$$
+Is a solution to the equation.
+
+
+
 
 
 
