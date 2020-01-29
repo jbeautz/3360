@@ -148,7 +148,60 @@ $$x = 93 - 85k$$
 $$y = -12 + 11k$$
 Is a solution to the equation.
 
+The smallest $x>0$ exists for $k = 1$.
+$$x_0 = 93 - 85 = 8$$
+$$y_0 = -12 + 11 = -1$$
 
+###Exercise 3E-62
+######(i) 133x + 203y = 38,
+Check if $(133, 203)|38$
+
+Use Euclidian Algorithm to find GCD.
+$$203 = 1\times 133 + 70$$
+$$133 = 1\times 70 + 63$$
+$$70 = 1\times 63 + 7$$
+$$63 = 9\times 7 + 0$$
+Hence, $(133, 203) = 7$.
+
+$7$ does not divide $38$ so there are no integer solutions.
+
+######(ii) 133x + 203y = 40,
+As shown in part (i), $7 = (133, 203)$.
+
+$7$ does not divide 40 so there are no integer solutions.
+
+######(iii) 133x + 203y = 42,
+As shown in part (i), $7 = (133, 203)$.
+
+$7$ does divide 42 so there are infinitely many integer solutions.
+
+$$a' = {133\over 7} = 19$$
+$$b' = {203\over 7} = 29$$
+
+Use Extended Euclidian Algorithm to find $\alpha, \beta$.
+
+$$\pmatrix{1&0\\0&1}\pmatrix{\alpha\\\beta} = \pmatrix{133\\203}$$
+$$\pmatrix{1&0\\-1&1}\pmatrix{\alpha\\\beta} = \pmatrix{133\\70}$$
+$$\pmatrix{2&-1\\-1&1}\pmatrix{\alpha\\\beta} = \pmatrix{63\\70}$$
+$$\pmatrix{2&-1\\-3&2}\pmatrix{\alpha\\\beta} = \pmatrix{63\\7}$$
+$$\pmatrix{29&-19\\-3&2}\pmatrix{\alpha\\\beta} = \pmatrix{0\\7}$$
+
+Hence,
+$$\alpha = -3$$
+$$\beta = 2$$
+
+$$133(-3) + 203(2) = 7$$
+$$133(-18) + 203(12) = 42$$
+
+Therefore $\forall k\in \mathbb{Z}$,
+$$x = -18 + 29k$$
+$$y = 12  - 19k$$
+
+
+######(iv) 133x + 203y = 44.
+As shown in part (i), $7 = (133, 203)$.
+
+$7$ does not divide 44 so there are no integer solutions.
 
 
 
