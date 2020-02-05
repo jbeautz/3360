@@ -66,19 +66,70 @@ If $\sqrt[3]{a}\in\mathbb{Q}$, then $\sqrt[3]{a} = {m\over n}$ for some $m,n\in 
 Rearranging this expression we find  
 $$n^3 a = m^3$$
 
-The fundamental theorem of arithmetic guarantees a prime factorization of all integers greater than 1. Therefore, $m,n$ both have prime factorizations.
+The fundamental theorem of arithmetic guarantees a prime factorization of all integers greater than 1. Therefore, $m,n,a$ all have prime factorizations.
 
-But cubing both sides revealed the prime factorizations of $m,n$ to be $(p_1^3 
+Let $p$ be a prime factor of $m, n$ such that $p^r|m$ and $p^s|n$. Let $q$ be the exponent of $p$ in the prime factorization of $a$.
 
 Hence, the expression from before becomes
-$$3e + 1 = 3d$$
+$$3s + q = 3r$$
+$$q = 3r - 3s$$
+$$q = 3(r-s)$$
 
-But, it was already established that if $a$ is not a cube, $a$ must not have all exponents which are multiples of 3. Hence, the cubic root is irrational.
+Hence, for all prime factors the exponent is a multiple of 3. However part (i) showed that if every prime factor takes a multiple of 3 as its exponent, $a$ is a cube.  
+Therefore, the cubic root of $a$ is only rational if $a$ is a cube.  
 
+###Exercise 4B-27  
+If $(a, b)|c$ then there exists an integer $j$ such that
+$$j(a,b)=c$$
+If $a|bc$ then there exists an integer $k$ such that
+$$ka  = bc$$
 
+Multiply both sides of this equation by $c$
+$$kac = bc^2$$
+$${kaj(a,b)\over b} = c^2$$
+Let $l = {kj(a,b)\over b}$. $l$ must be an integer because we know $j(a,b) = c$ and $a|bc$.  
+Hence, $la = c$ and $a|c^2$.
 
+###Exercise 4B-37  
+The exponent of each prime in the factorization of the lcm is the maximum of the exponent of that prime in $a$ and the exponent of that prime in $b$.  
+$$[a,b] = 6^5 7^6 8^4 9^5 10^6$$
 
+###Exercise 5A-5
+(i)
+$$13\times 153 = 1989$$
+Therefore $1900 = 1 mod 13$ and $2003 = 1 mod 13$.
+Therefore there exists no $b\in (1900,2000)$ congruent to $1 mod 13$.  
 
+(ii)
+$$1776 mod 25 \cong 1 mod 25$$
+$25\times 71 = 1775$ and $25\times 72 = 2000$ so there is not value $b\in (1900,2000)$ congruent to $1776 mod 25$.
 
+(iii)
+$$1914 mod 27 \cong 3 mod 27$$
+There exists only one $b$ in the range.
+$$b = 1998$$
+
+###Exercise 5A-6
+$a = 8d + 5$ and $a = 7e + 3$.  
+$${8d + 5} = {7e + 3}$$
+$${8d + 2} = {7e}$$
+$$d = e = -2$$
+Hence, $a = -11$.
+
+###Exercise 5A-7  
+Show that if m > 4 is not prime, then (m − 1)! ≡ 0 (mod m)
+
+$(m-1)!k = m$ for some integer $k$.
+
+Proof by Induction:  
+Base Case: $m = 6$.
+$$(6-1)! = (5)(4)(3)(2) \cong 0 mod 6$$
+$3\times 2 = 6$ so 5! is a multiple of 6. Hence, the induction hypothesis holds for the base case.
+
+Induction Step: $m = n$.
+$$k(n-1)! = n$$
+for some k.
+Assume hypothesis holds true for $m<n$.
+Let $n = p_1...p_r$ be the prime factorization of $n$. We know from the fundamental theorem of arithmetic this factorization exists and $p_i<n$ for all $i$ since $n$ is not prime. 
 
 ***THE END***
