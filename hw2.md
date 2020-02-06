@@ -1,4 +1,4 @@
-<font color = "white">  
+<font color = "black">  
 
 Jack Beautz  
 jpb375  
@@ -119,7 +119,7 @@ Hence, $a = -11$.
 ###Exercise 5A-7  
 Show that if m > 4 is not prime, then (m − 1)! ≡ 0 (mod m)
 
-$(m-1)!k = m$ for some integer $k$.
+$(m-1)! = mk$ for some integer $k$.
 
 Proof by Induction:  
 Base Case: $m = 6$.
@@ -130,6 +130,59 @@ Induction Step: $m = n$.
 $$k(n-1)! = n$$
 for some k.
 Assume hypothesis holds true for $m<n$.
-Let $n = p_1...p_r$ be the prime factorization of $n$. We know from the fundamental theorem of arithmetic this factorization exists and $p_i<n$ for all $i$ since $n$ is not prime. 
+Let $n = p_1...p_r$ be the prime factorization of $n$. We know from the fundamental theorem of arithmetic this factorization exists and $p_i<n$ for all $i$ since $n$ is not prime.  
+Now consider the prime factorization of $(n-1)!$. This will contain all primes $p_j<n$. Hence, (n-1)!|n$. Therefore $k$ exists and the induction hypothesis holds.
+
+Because the base case and step case are valid in induction. The hypothesis must be true.
+
+###Exercise 5B-15
+$$7^{16} \cong 1 mod 17$$
+$$7^{16} = {7^2}^{16}$$
+$${7^2}^{16}\cong -2^{16} mod 17$$
+$$-2^{16} mod 17 \cong {(-2)^4}^4 mod 17$$
+$${(-2)^4}^4 mod 17 \cong (-1)^4 mod 17$$
+$$(-1)^4 mod 17 \cong 1 mod 17$$
+Hence, $7^{16} \cong 1 mod 17$.  
+
+$$7^{546} \cong {7^2}{7^{16}}^{34} mod 17$$
+$${7^2}{7^{16}}^34 mod 17 \cong  {7^2}{1^34} mod 17$$
+$${7^2} mod 17 \cong 49 mod 17$$
+$17\times 2 = 34$ Hence, the residue is $7^2-34 = 15$.  
+
+###Exercise 5B-16
+(i)
+$$5^{18} mod 11\cong {5^3}^6 mod 11$$
+$$125^6 mod 11\cong 4^6 mod 11$$
+$${4^3}^2 mod 11\cong {64}^2 mod 11$$
+$$-2^2 mod 11\cong -4 mod 11$$
+$$-4 mod 11 \cong 7 mod 11$$
+
+Hence, the least non negative residue is 7.
+
+(iii)  
+$$4^{47} mod 12\cong 64(4^{44}) mod 12$$
+$$64(4^{4})^{11} mod 12\cong 64(4)^{11} mod 12$$
+$$(4^4)4^{10} mod 12\cong (4)^11 mod 12$$
+$$4^3(4^4)^2 mod 12\cong 4(4^4) mod 12$$
+$$16 mod 12 \cong 4$$
+
+###Exercise 5B-17
+Show that 1 is the least nonnegative residue of a^6 (mod 7) for each number a,
+1 ≤ a ≤ 6.
+
+1 is the least non negative value possible so it is sufficient to check this and the fact that no $a^6$ is a multiple of 7. The sixth rooth of 7 is irrational so it can never be modulo 0 for an integer $a$.
+
+$$a^6 - 1 = 7d$$
+$$a^6 = 7d + 1$$
+
+For $a=1$ we have equality for $d=0$.  
+For $a=2$ we have equality for $d=9$.  
+For $a=3$ we have equality for $d=10$.  
+For $a=4$ we have equality for $d=585$.
+For $a=5$ we have equality for $d=2232$.  
+For $a=6$ we have equality for $d=6665$.  
+
+Hence, 1 is the least non negative residue for all integer $a\in[1,6]$.
+
 
 ***THE END***
