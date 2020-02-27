@@ -1,4 +1,4 @@
-<font color = "white">  
+<font color = "black">  
 
 Jack Beautz  
 jpb375  
@@ -77,7 +77,68 @@ $[113]$
 $113$ is coprime with $365$ so there is an inverse.  
 $$[113\times 42]=[4746]=[1]$$
 
+###Exercise 7C-35(ii)
+$$0+0i$$
+$$0+i$$
+$$0+2i$$
+$$1+0i$$
+$$1+i$$
+$$1+2i$$
+$$2+0i$$
+$$2+i$$
+$$2+2i$$
 
+###Exercise 7C-35(ii)
+$$(0+i)(0+2i) = 1$$
+$$(0+2i)(0+i) = 1$$
+$$(1+0i)(1+0i) = 1$$
+$$(1+i)(2+i) = 1$$
+$$(1+2i)(2+2i) = 1$$
+$$(2+0i)(2+0i)=1$$
+$$(2+i)(1+2i)=1$$
+$$(2+2i)(1+2i)=1$$
+
+###Exercise 7C-36
+$$0+0i$$
+$$0+1i$$
+$$1+0i$$
+$$1+i$$
+
+$$(0+1i)(0+1i) = 1$$
+$$(1+0i)(1+0i) = 1$$
+Note: $0+0i$ and $1+i$ do not have inverses in $\mathbb{Z}_2$.  
+
+###Exercise 7D-40
+$$g(f): R\to T$$
+There are two properties which need to be satisfied.  
+(i)$g(f(e))=e'$ where $e$ is the neutral element of $R$ and $e'$ is the neutral element of $T$.  
+(ii)$g(f(a*b))=g(f(a))* g(f(b))$ $\forall a,b\in R$.  
+
+First prove (i).  
+$f$ is a homomorphisms so $f(e) = e''$ where $e''$ is the neutral element in $S$. $g$ is a homomorphism so we know $g(e'') = e'$. Therefore, $e' = g(e'') = g(f(e))$.  
+
+Next prove (ii).  
+$f$ is a homomorphism so $f(a*b)=f(a)* f(b)$. $g$ is a homomorphism so $g(f(a)* f(b)) = g(f(a))* g(f(b))$.  
+
+Therefore the composite function $g(f(r))$ is a homomorphism.  
+
+###Exercise 7D-42
+Using the same two properties from the above question.  
+(i)$g(f(e))=e'$ where $e$ is the neutral element of $R$ and $e'$ is the neutral element of $T$.  
+(ii)$g(f(a*b))=g(f(a))* g(f(b))$ $\forall a,b\in R$.  
+
+First prove (i).  
+$1$ is the neutral element of $R$. $f(1) = \pmatrix{1&0\\0&1}$.  
+This is the identity matrix. Thus any matrix multiplied by this matrix in either direction is the same matrix.  
+
+Next prove (ii).  
+$$f(a*b) = \pmatrix{a*b&0\\0&a*b}$$
+$$f(a)* f(b) = \pmatrix{a&0\\0&a}\pmatrix{b&0\\0&b}$$
+$$f(a)* f(b) = \pmatrix{a*b&0\\0&a*b}$$
+Thus,
+$$f(a*b) = f(a)* f(b)$$
+
+The function $f$ is a homomorphism.  
 
 
 

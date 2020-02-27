@@ -1,9 +1,11 @@
+x = 0
 i = 0
-n=113
+j = 0
+while x!=1:
+    while x!=1:
+        i = i + 1
+        x = 127*i - 35 * j
+        
 
-while (n*i-1)%365 != 0:
-    i=i+1
-    print(i)
-
-print("Found it:", i)
-print(i, "times ", n, "equals ", i*n)
+print(i)
+print(j)
