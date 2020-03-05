@@ -75,8 +75,88 @@ $$\{1,5,9,13\}$$
 The above subgroup is closed under multiplication and contains the units of each member of the subgroup.  
 
 ###Exercise 11C-15
+$U_19 = \{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18\}$$
+Thus, $|U_19|=18$.  
+(a)  
+$$[1]=\{1,8,15\}$$
+$3|18$ so Lagrange holds.  
+$$[2]=\{2,9,16\}$$
+$3|18$ so Lagrange holds.  
+$$[3]=\{3,10,17\}$$
+$3|18$ so Lagrange holds.  
+$$[4]=\{4,11,18\}$$
+$3|18$ so Lagrange holds.  
+$$[5]=\{5,12\}$$
+$2|18$ so Lagrange holds.  
+$$[6]=\{6,13\}$$
+$2|18$ so Lagrange holds.  
+$$[7]=\{7,14\}$$
+$2|18$ so Lagrange holds.  
+$$[8]=\{1,8,15\}$$
+$3|18$ so Lagrange holds.  
+$$[9]=\{2,9,16\}$$
+$3|18$ so Lagrange holds.  
+$$[10]=\{3,10,17\}$$
+$3|18$ so Lagrange holds.  
+$$[11]=\{4,11,18\}$$
+$3|18$ so Lagrange holds.  
+$$[12]=\{5,12\}$$
+$2|18$ so Lagrange holds.  
+$$[13]=\{6,13\}$$
+$2|18$ so Lagrange holds.  
+$$[14]=\{7,14\}$$
+$2|18$ so Lagrange holds.  
+$$[15]=\{1,8,15\}$$
+$3|18$ so Lagrange holds.  
+$$[16]=\{2,9,16\}$$
+$3|18$ so Lagrange holds.  
+$$[17]=\{3,10,17\}$$
+$3|18$ so Lagrange holds.  
+$$[18]=\{4,11,18\}$$
+$3|18$ so Lagrange holds.
 
+(b)  
+$$[1]=\{1,13\}$$
+$2|18$ so Lagrange holds.
+$$[2]=\{2,14\}$$
+$2|18$ so Lagrange holds.
+$$[3]=\{3,15\}$$
+$2|18$ so Lagrange holds.
+$$[4]=\{4,16\}$$
+$2|18$ so Lagrange holds.
+$$[5]=\{5,17\}$$
+$2|18$ so Lagrange holds.
+$$[6]=\{6,18\}$$
+$2|18$ so Lagrange holds.
+$$[7]=\{7\}$$
+$1|18$ so Lagrange holds.
+$$[8]=\{8\}$$
+$1|18$ so Lagrange holds.
+$$[9]=\{9\}$$
+$1|18$ so Lagrange holds.
+$$[10]=\{10\}$$
+$1|18$ so Lagrange holds.
+$$[11]=\{11\}$$
+$1|18$ so Lagrange holds.
+$$[12]=\{12\}$$
+$1|18$ so Lagrange holds.
+$$[13]=\{1,13\}$$
+$2|18$ so Lagrange holds.
+$$[14]=\{2,14\}$$
+$2|18$ so Lagrange holds.
+$$[15]=\{3,15\}$$
+$2|18$ so Lagrange holds.
+$$[16]=\{4,16\}$$
+$2|18$ so Lagrange holds.
+$$[17]=\{5,17\}$$
+$2|18$ so Lagrange holds.
+$$[18]=\{6,18\}$$
+$2|18$ so Lagrange holds.
 
+$(c)$  
+$$[1]=\{1,6,11,16\}$$
+$$[2]=\{2,7,12,17\}$$
+$$[3]=\{2,
 
 
 **THE END**
