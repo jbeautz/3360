@@ -125,6 +125,29 @@ $\{\{10,12,3,15,18,14,13,8,2\}\}$.
 All cosets are of cardinality 9.  
 $9|18$ so Lagrange's theorem is satisfied.  
 
+###Exercise 11F-31
+$f:R\to S$ is a ring homomorphism. Thus, for $a,b\in R$ and $e$ the neutral element of $R$ and $e'$ the neutral element of $S$.  
+(i) $f(e) = e'$  
+(ii) $f(a)* f(b) = f(a*b)$  
+This leaves only mapping of inverse elements property for $f$ to be a group homomorphism.  
+$$f(a') = f(a)'$$
+Where $a * a' = e$.  
+$U(R),U(S)$ contain the inverses of every element in their respective sets because they are groups.  
+Suppose $a,a'\in R$ such that $f(a')\neq f(a)'$.  
+Then,
+$$f(a') * f(a) \neq f(a)' * f(a)$$
+Using (ii) we combine the LHS
+$$f(a' * a) \neq f(a)' * f(a)$$
+$$f(e) \neq f(a)' * f(a)$$
+Using (i) the neutral element maps to the other neutral element.  
+$$e' \neq e'$$
+Thus, we have arrived at a contradiction.  
+So $f(a') = f(a)'$ must be true.  
+
+$f:U(R)\to U(S)$ is a group homomorphism.  
+
+###Exercise 11F-33
+
 
 
 
