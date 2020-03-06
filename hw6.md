@@ -28,14 +28,24 @@ Let G be a group with operation ∗. If G is finite, then a non-empty
 subset H of G is a subgroup of G if and only if H is closed under ∗.
 
 $H$ is a subgroup of $G$ if it satisfies  
-(i) $H$ is closed under multiplication  
-(ii) if $a\in H$, $a'\in H$.
+(i) $e\in H$  
+(ii) $H$ is closed under multiplication  
+(iii) if $a\in H$, $a'\in H$.
 
-Hence, if (ii) is always true for subsets of finite groups, the above statement holds.  
+First, $H$ of $G$ is a subgroup of $G$ if $H$ is closed under ∗.  
+**Proof**: This implies that for finite $G$, (i) and (iii) must be satisfied if (ii) is satisfied.
+Assume (iii) is satisfied. Then, let $a\in H$ exists such that $a a' = e$ for some $a'\not\in H$.
+Assume (iii) is satisfied. $H$ is closed under * so $e$ must be in $H$. Thus, (i) is satisfied.  
+Assume (i) is satisfied. Let $a,b,c\in H$ such that $a'\not\in H$.  
+$$e = a * b * c$$
+$$a' * e = a' * a * b * c$$
+$$a' = b * c$$
+But, $b, c\in H$ and $H$ is closed under multiplication. So, $a'\in H$.  
+Thus, if (i) and (iii) are satisfied, $H$ is a proper subgroup.  
 
-Suppose there exists $a\in H$ such that $a' \in G-H$. $G$ is finite so the subset $G-H$ must be finite as well.  
+Next, $H$ is closed under ∗ if $H$ of $G$ is a subgroup.  
+**Proof**: $H$ is a subgroup so by definition it must be closed under * .
 
-$H$ is a finite group so each element should have a finite order. Consider $a\in H$ such that $O(a) = n$. Then
 
 ###Exercise 11B-11
 (a)
@@ -78,85 +88,44 @@ The above subgroup is closed under multiplication and contains the units of each
 $U_19 = \{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18\}$$
 Thus, $|U_19|=18$.  
 (a)  
-$$[1]=\{1,8,15\}$$
-$3|18$ so Lagrange holds.  
-$$[2]=\{2,9,16\}$$
-$3|18$ so Lagrange holds.  
-$$[3]=\{3,10,17\}$$
-$3|18$ so Lagrange holds.  
-$$[4]=\{4,11,18\}$$
-$3|18$ so Lagrange holds.  
-$$[5]=\{5,12\}$$
-$2|18$ so Lagrange holds.  
-$$[6]=\{6,13\}$$
-$2|18$ so Lagrange holds.  
-$$[7]=\{7,14\}$$
-$2|18$ so Lagrange holds.  
-$$[8]=\{1,8,15\}$$
-$3|18$ so Lagrange holds.  
-$$[9]=\{2,9,16\}$$
-$3|18$ so Lagrange holds.  
-$$[10]=\{3,10,17\}$$
-$3|18$ so Lagrange holds.  
-$$[11]=\{4,11,18\}$$
-$3|18$ so Lagrange holds.  
-$$[12]=\{5,12\}$$
-$2|18$ so Lagrange holds.  
-$$[13]=\{6,13\}$$
-$2|18$ so Lagrange holds.  
-$$[14]=\{7,14\}$$
-$2|18$ so Lagrange holds.  
-$$[15]=\{1,8,15\}$$
-$3|18$ so Lagrange holds.  
-$$[16]=\{2,9,16\}$$
-$3|18$ so Lagrange holds.  
-$$[17]=\{3,10,17\}$$
-$3|18$ so Lagrange holds.  
-$$[18]=\{4,11,18\}$$
-$3|18$ so Lagrange holds.
+$\langle [7]\rangle = \{7,11,1\}$  
+$$[1]=\{7,11,1\}$$
+$$[2]=\{14,3,2\}$$
+$$[3]=\{2,14,3\}$$
+$$[4]=\{9,6,4\}$$
+$$[5]=\{16,17,5\}$$
+$$[6]=\{4,9,6\}$$
+$$[7]=\{11,1,7\}$$
+$$[8]=\{18,12,8\}$$
+$$[9]=\{6,4,9\}$$
+$$[10]=\{13,15,10\}$$
+Now for every $x\in G$, $x\in C$ for some coset $C$. Thus the set of cosets is
+$\{\{14,3,2\},\{9,6,4\},\{16,17,5\},\{18,12,8\},\{13,15,10\}\}$
+All cosets are of cardinality 3.  
+$3|18$ so Lagrange's theorem is satisfied.  
 
 (b)  
-$$[1]=\{1,13\}$$
-$2|18$ so Lagrange holds.
-$$[2]=\{2,14\}$$
-$2|18$ so Lagrange holds.
-$$[3]=\{3,15\}$$
-$2|18$ so Lagrange holds.
-$$[4]=\{4,16\}$$
-$2|18$ so Lagrange holds.
-$$[5]=\{5,17\}$$
-$2|18$ so Lagrange holds.
-$$[6]=\{6,18\}$$
-$2|18$ so Lagrange holds.
-$$[7]=\{7\}$$
-$1|18$ so Lagrange holds.
-$$[8]=\{8\}$$
-$1|18$ so Lagrange holds.
-$$[9]=\{9\}$$
-$1|18$ so Lagrange holds.
-$$[10]=\{10\}$$
-$1|18$ so Lagrange holds.
-$$[11]=\{11\}$$
-$1|18$ so Lagrange holds.
-$$[12]=\{12\}$$
-$1|18$ so Lagrange holds.
-$$[13]=\{1,13\}$$
-$2|18$ so Lagrange holds.
-$$[14]=\{2,14\}$$
-$2|18$ so Lagrange holds.
-$$[15]=\{3,15\}$$
-$2|18$ so Lagrange holds.
-$$[16]=\{4,16\}$$
-$2|18$ so Lagrange holds.
-$$[17]=\{5,17\}$$
-$2|18$ so Lagrange holds.
-$$[18]=\{6,18\}$$
-$2|18$ so Lagrange holds.
+$\langle [12]\rangle = \{12, 11, 18, 7, 8, 1\}$  
+$$[1]=\{12,11,18,7,8,1\}$$
+$$[2]=\{5,3,17,14,16,2\}$$
+$$[3]=\{17,14,16,2,5,3\}$$
+$$[4]=\{10,6,15,9,17,4\}$$
+Now for every $x\in G$, $x\in C$ for some coset $C$. Thus the set of cosets is
+$\{\{5,3,17,14,16,2\},\{10,6,15,9,17,4\}\}$.  
+All cosets are of cardinality 6.  
+$6|18$ so Lagrange's theorem is satisfied.  
+
 
 $(c)$  
-$$[1]=\{1,6,11,16\}$$
-$$[2]=\{2,7,12,17\}$$
-$$[3]=\{2,
+$\langle [5]\rangle = \{5,6,11,17,9,7,16,4,1\}$  
+$$[1]=\{5,6,11,17,9,7,16,4,1\}$$
+$$[2]=\{10,12,3,15,18,14,13,8,2\}$$
+Now for every $x\in G$, $x\in C$ for some coset $C$. Thus the set of cosets is
+$\{\{10,12,3,15,18,14,13,8,2\}\}$.  
+All cosets are of cardinality 9.  
+$9|18$ so Lagrange's theorem is satisfied.  
+
+
 
 
 **THE END**
