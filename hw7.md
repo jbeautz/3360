@@ -21,17 +21,11 @@ In general a code can detect up to $d(C)-1$ errors and can correct up to $\lfloo
 Therefore $C$ can detect up to 1 error and correct no errors.  
 
 ###Exercise CS 1.6  
-Notice that to do this and correct a single error, the strings of length five must all
-differ in at least three places. Suppose we could write down eight strings of length five that
-all differed in at least three places. Then, they could have at most two places the same. Now,
-there must be at least four strings that have the same first digit (since you only have 0 and 1
-to choose from and there are a total of 8 strings). Of those four, there must be at least two
-that have the same second digit (for the same reason as above). So, we have two strings that
-are the same in the first two places (let’s just suppose for simplicity that they both start with
-00). It follows that they must be different in the last three positions. Now, consider one of
-the other strings (remember, there were at least 4) that starts with 0. It must differ from the
-two strings starting with 00 in at least three places. So, of the last 4 positions, it must differ
-from each of the 00 strings in at least three positions. But since the 00 strings differ in the
-last three positions, this is impossible.
+To correct a single error using the letters, bob must have messages which all differ in at least three places.  
+Assume we have 8 messages of length 5 which all differ in at least three places. Then, each two can have at most two places the same. Without loss of generality let there be four messages with the same first digit 1. In the messages beginning with 1, two of them must have 1 as the second digit. Among these four messages they must differ in the last three spots.  
+
+Consider one of the other four messages, beginning with 0. It must differ in the last three spots from the messages beginning with 11. But since the two 11 strings differ in the last three spots this string must begin with something other than 0. Thus it is impossible.  
+
+
 
 ***THE END***
