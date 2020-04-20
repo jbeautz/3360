@@ -70,8 +70,25 @@ $$2x^2+4 = (2x+2)(x) + (x + 1)$$
 $$(2x+2) = 2(x+1) + 0$$
 So, $x+1$ is the GCD of the polynomials in $\mathbb Z_3[x]$.  
 
+###Exercise 14B-20
+$$\pmatrix{1& 0&    x^3 + x^2 + x + 2\\0& 1&    x^3 + 2x^2 + 2}$$
 
+$$\pmatrix{1& 0&    x^3 + x^2 + x + 2\\2& 1&    x^2 + 2x}$$
 
+$$\pmatrix{1+x& 2x&    2x^2 + x + 2\\2  & 1 &    x^2 + 2x}$$
+
+$$\pmatrix{x& 2x+1&    2\\2& 1   &    x^2 + 2x}$$
+
+$$\pmatrix{x    & 2x+1         &    2\\x^3+2& 2x^3+x^2+1   &    2x}$$
+
+$$\pmatrix{x        & 2x+1       &    2\\x^3+x^2+2& 2x^3+x+1   &    0}$$
+
+$$\pmatrix{2x        & x+2       &    1\\ x^3+x^2+2& 2x^3+x+1   &    0}$$
+
+So from the top row of the matrix,
+$$(2x)(x^3+x^2+x+2)+(x+2)(x^3+2x^2+2)=1$$
+
+###Exercise 14B-26
 
 
 
