@@ -115,5 +115,6 @@ $$s(x)= 1+{4\over 21}x$$
 $$d(x) = 1$$
 
 
+###Exercise 14C-44
 
 ***THE END***
