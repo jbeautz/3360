@@ -116,5 +116,58 @@ $$d(x) = 1$$
 
 
 ###Exercise 14C-44
+Note: $x^p = x (mod p)$, so $x^p-x = 0\in \mathbb F_p$ by Fermat.  
+$x-i$ is irreducible in any modular field.
+$$\prod_{i=0}^{p-1} (x-i) = 0$$
+$x\in \mathbb F_p$ so $1\leq x\leq p$. Hence for $(x-i)=0$ for some $i\in \mathbb F_p$.  
+Thus, for any $x$ in the field, one of the irreducible elements of the factorization must be 0, because there is a distinct one for each element of the field.  
+$\prod_{i=0}^{p-1} (x-i) = 0$ has degree $p$, same as $x^p-x$, so it must be a complete factorization in $\mathbb F_p$.  
+
+
+###Exercise 14C-46
+By the root theorem, the polynomial is irreducible if it never
+$$x$$
+$$x+1$$
+
+$$x^2+x+1$$
+
+$$x^3+x+1$$
+$$x^3+x^2+1$$
+
+$$x^4+x^3+x^2+x+1$$
+$$x^4+x^3+1$$
+$$x^4+x+1$$
+A polynomial $p(x)$ is irreducible if it does not have linear factors. Therefore, it suffices to show that p(0)=p(1)=1. Using this, we add higher degrees and test for divisibility of lower degree polynomials.  
+
+###Exercise 14C-47(iii)  
+$$x^7 + x^6 + x^4 + 1$$
+-1 is a root so, by the root theorem, $x+1$ is a root.  
+
+Using polynomial long division, we find
+$$x^6+x^3+x^2+x$$
+Is the other factor.  
+
+Splitting this we have
+$$x^7 + x^6 + x^4 + 1=(x+1)(x^2+x+1)(x^4+x^3+1)$$
+
+###Exercise 14C-48(ii)  
+$$x^{10}-1=(x^5+1)^2$$
+By difference of squares in $\mathbb F_2$.
+
+$1$ is a root so $x+1$ must be a factor.  
+$x^5+1 = (x+1)(x^4+x^3+x^2+x+1)$$
+So,
+$$x^{10}-1 = (x+1)^2(x^4+x^3+x^2+x+1)^2$$
+
+
+
+
+
+
+
+
+
+
+
 
 ***THE END***
