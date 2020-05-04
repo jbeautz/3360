@@ -12,8 +12,8 @@ def gcdExtended(a, b):
 
 # Driver code
 a, b = 20,11
-gcd, x, y = gcdExtended(a, b)
-print(x,"*",a,"+",y,"*",b," = ",gcd)
+#gcd, x, y = gcdExtended(a, b)
+#print(x,"*",a,"+",y,"*",b," = ",gcd)
 
-#print(RSA(x,e,n))
+print(RSA(14,3,33))
 ##https://mathsci2.appstate.edu/~cookwj/sage/algebra/Euclidean_algorithm-poly.html
