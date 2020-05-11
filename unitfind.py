@@ -15,5 +15,5 @@ a, b = 20,11
 #gcd, x, y = gcdExtended(a, b)
 #print(x,"*",a,"+",y,"*",b," = ",gcd)
 
-print(RSA(14,3,33))
+print(RSA(6,10,11))
 ##https://mathsci2.appstate.edu/~cookwj/sage/algebra/Euclidean_algorithm-poly.html
